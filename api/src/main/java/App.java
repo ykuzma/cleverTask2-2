@@ -1,6 +1,9 @@
 public class App {
 
     public static void main(String[] args) {
-       /* Utils.isAllPositivNumber("12", "79");*/
+        Utils utils = new Utils();
+        System.out.println(utils.isAllPositiveNumbers("12", "ghbdtn"));
+
+
     }
 }
