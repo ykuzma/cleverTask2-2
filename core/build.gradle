@@ -11,7 +11,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.exemple:CleverTest2-1:1.8.8'
+    implementation 'org.exemple:CleverTask2-1:1.8.8'
+
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
