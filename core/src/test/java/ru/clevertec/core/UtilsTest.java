@@ -1,8 +1,8 @@
-package ru.clevertec;
+package ru.clevertec.core;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import ru.clevertec.Utils;
+import ru.clevertec.core.Utils;
 
 import static org.junit.jupiter.api.Assertions.*;
 

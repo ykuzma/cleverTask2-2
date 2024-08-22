@@ -1,4 +1,6 @@
-package ru.clevertec;
+package ru.clevertec.api;
+
+import ru.clevertec.core.Utils;
 
 public class App {
 

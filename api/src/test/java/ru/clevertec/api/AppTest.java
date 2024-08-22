@@ -1,4 +1,4 @@
-package ru.clevertec;
+package ru.clevertec.api;
 
 import org.junit.jupiter.api.Test;
 

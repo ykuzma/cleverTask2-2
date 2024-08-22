@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'jacoco-report-aggregation'
 }
 
 group 'org.example'
@@ -13,19 +14,41 @@ subprojects{
         }
         mavenCentral()
     }
+
+
+
+
 }
 
 repositories {
+    maven {
+        name('myRepo')
+        url 'libs'
+    }
     mavenCentral()
 }
 
 
 dependencies {
-
+    jacocoAggregation project(':api')
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 test {
+
     useJUnitPlatform()
+}
+
+reporting {
+    reports {
+        testCodeCoverageReport(JacocoCoverageReport) {
+            testType = TestSuiteType.UNIT_TEST
+        }
+    }
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('testCodeCoverageReport', JacocoReport)
+
 }

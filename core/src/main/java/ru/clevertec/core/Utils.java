@@ -1,4 +1,4 @@
-package ru.clevertec;
+package ru.clevertec.core;
 
 import ru.clevertec.StringUtils;
 
