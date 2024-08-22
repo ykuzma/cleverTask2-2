@@ -7,18 +7,21 @@ version '0.0.1'
 
 repositories {
 
-    mavenLocal {
+    maven{
+        name('myRepo')
+        url '$rootDir/libs'
+    }
+    /*mavenLocal {
         metadataSources{
             mavenPom()
             artifact()
         }
-    }
-
+    }*/
+    mavenCentral()
 }
 
 
 dependencies {
-
 
     implementation 'org.example:utils:1.1.5'
 
