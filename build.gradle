@@ -5,10 +5,20 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-repositories {
+subprojects{
+    repositories {
+        maven {
+            name('myRepo')
+            url '../libs'
+        }
+        mavenCentral()
+    }
+}
 
+repositories {
     mavenCentral()
 }
+
 
 dependencies {
 

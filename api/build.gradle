@@ -6,14 +6,11 @@ group 'org.example'
 version '0.0.2'
 
 repositories {
-    maven{
-        name('myRepo')
-        url '$rootDir/libs'
-    }
     /*maven{
         name('myRepo')
-        url layout.projectDirectory.dir('libs')
+        url '../libs'
     }*/
+
 
     mavenCentral()
 }
