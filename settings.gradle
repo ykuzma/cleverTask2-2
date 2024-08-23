@@ -1,4 +1,13 @@
+pluginManagement{
+    repositories {
+        maven {
+            name('myRepo')
+            url 'libs'
+        }
+    }
+}
 rootProject.name = 'CleverTask2-2'
 include 'api'
 include 'core'
+
 

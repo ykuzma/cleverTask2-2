@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'jacoco-report-aggregation'
+     id 'ru.clevertec.customPlugin' version '3.0'
 }
 
 group 'org.example'
@@ -14,10 +14,6 @@ subprojects{
         }
         mavenCentral()
     }
-
-
-
-
 }
 
 repositories {
