@@ -4,15 +4,14 @@ plugins {
 }
 
 group 'org.example'
-version '0.0.1'
+version '1.0'
 
 repositories {
-
-    /*maven{
+    mavenLocal()
+    maven{
         name('myRepo')
         url '../libs'
-    }*/
-
+    }
     mavenCentral()
 }
 
@@ -29,6 +28,8 @@ test {
     finalizedBy(jacocoTestReport)
     useJUnitPlatform()
 }
+
 jacocoTestReport{
+    dependsOn(test)
     enabled =false
 }
