@@ -8,6 +8,6 @@
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
-  <artifactId>utils</artifactId>
-  <version>1.1.5</version>
+  <artifactId>CustomPlugin</artifactId>
+  <version>1.0</version>
 </project>
