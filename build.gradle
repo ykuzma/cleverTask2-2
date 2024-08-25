@@ -6,25 +6,17 @@ plugins {
 group 'org.example'
 version '1.0'
 
-
 repositories {
     mavenLocal()
-    maven {
+    maven{
         name('myRepo')
         url 'libs'
     }
     mavenCentral()
 }
 
-
 dependencies {
     jacocoAggregation project(':api')
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-}
-
-test {
-    useJUnitPlatform()
 }
 
 reporting {
