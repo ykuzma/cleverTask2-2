@@ -27,6 +27,16 @@ reporting {
     }
 }
 
+testCodeCoverageReport {
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: [
+                    "ru/clevertec/core/*Exception.class"
+            ])
+        }))
+    }
+}
+
 tasks.named('check') {
     dependsOn tasks.named('testCodeCoverageReport', JacocoReport)
 }

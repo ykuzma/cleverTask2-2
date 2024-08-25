@@ -4,7 +4,6 @@ import ru.clevertec.core.InputDataException;
 import ru.clevertec.core.Utils;
 
 public class App {
-
     public static void main(String[] args) {
 
         try {
