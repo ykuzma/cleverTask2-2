@@ -27,11 +27,11 @@
         {
           "name": "CustomPlugin-3.0.jar",
           "url": "CustomPlugin-3.0.jar",
-          "size": 1560,
-          "sha512": "aaa85ad1051b4ef6d9c95df81b16c44e079784c13f5ba04e28bf0832854874578bc5019efb631fa9e381163d0006ca7d17d25d9aaefeaa978811b337c15916bb",
-          "sha256": "4e109b87acd17b0b6d2a73cf7147bff42a87d47839abef280078c4769b195d3e",
-          "sha1": "ca6247d85ac2f70242640d9c6f3b2bb3d351d2dc",
-          "md5": "8de54f9d99c5addc0f94004e652ab5ca"
+          "size": 1852,
+          "sha512": "75460ca7ae84c227bac8e6c1ec2a89767e7705380fa9905e7406107a21ea25a8d92d73ab7fee30b72b5fb2106c01f8a055fdbcba068a423f656d82c2523f0ad2",
+          "sha256": "694e043ed1b469ddd6f30164f9d125703f21e3df681e578e79af7533232c8ece",
+          "sha1": "252abd29599c8a8443b9da1eee53e6fa9ce3cde9",
+          "md5": "767d070dd81d05e78f9bc2ba23ec7a01"
         }
       ]
     },
@@ -48,11 +48,11 @@
         {
           "name": "CustomPlugin-3.0.jar",
           "url": "CustomPlugin-3.0.jar",
-          "size": 1560,
-          "sha512": "aaa85ad1051b4ef6d9c95df81b16c44e079784c13f5ba04e28bf0832854874578bc5019efb631fa9e381163d0006ca7d17d25d9aaefeaa978811b337c15916bb",
-          "sha256": "4e109b87acd17b0b6d2a73cf7147bff42a87d47839abef280078c4769b195d3e",
-          "sha1": "ca6247d85ac2f70242640d9c6f3b2bb3d351d2dc",
-          "md5": "8de54f9d99c5addc0f94004e652ab5ca"
+          "size": 1852,
+          "sha512": "75460ca7ae84c227bac8e6c1ec2a89767e7705380fa9905e7406107a21ea25a8d92d73ab7fee30b72b5fb2106c01f8a055fdbcba068a423f656d82c2523f0ad2",
+          "sha256": "694e043ed1b469ddd6f30164f9d125703f21e3df681e578e79af7533232c8ece",
+          "sha1": "252abd29599c8a8443b9da1eee53e6fa9ce3cde9",
+          "md5": "767d070dd81d05e78f9bc2ba23ec7a01"
         }
       ]
     }
