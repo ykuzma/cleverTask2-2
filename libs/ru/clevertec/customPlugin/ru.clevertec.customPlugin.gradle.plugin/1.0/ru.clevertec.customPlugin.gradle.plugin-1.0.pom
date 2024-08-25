@@ -3,15 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ru.clevertec.customPlugin</groupId>
   <artifactId>ru.clevertec.customPlugin.gradle.plugin</artifactId>
-  <version>3.0</version>
+  <version>1.0</version>
   <packaging>pom</packaging>
-  <name>Does nothing</name>
-  <description>My first plugin</description>
+  <name>customPlugin</name>
+  <description>aggregate jacoco report</description>
   <dependencies>
     <dependency>
       <groupId>org.example</groupId>
       <artifactId>CustomPlugin</artifactId>
-      <version>3.0</version>
+      <version>1.0</version>
     </dependency>
   </dependencies>
 </project>
