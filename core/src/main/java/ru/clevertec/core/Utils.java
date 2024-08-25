@@ -1,22 +1,16 @@
 package ru.clevertec.core;
 
 import ru.clevertec.StringUtils;
+import java.util.Arrays;
 
 public class Utils {
 
+    public boolean isAllPositiveNumbers(String...str) throws NumberFormatException, InputDataException {
+        if(str.length == 0) throw new InputDataException("Input data cannot be empty. Array length - " + str.length);
 
-    public boolean isAllPositiveNumbers(String...str) {
-        if(str == null || str.length == 0) {
-            return false;
-        }
         StringUtils stringUtils = new StringUtils();
-        for (String s: str) {
-            if (!stringUtils.isPositiveNumber(s)) {
-                return false;
-            }
-        }
-        return true;
+
+        return Arrays.stream(str)
+                .allMatch(stringUtils :: isPositiveNumber);
     }
-
-
 }

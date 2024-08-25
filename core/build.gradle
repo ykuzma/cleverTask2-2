@@ -31,5 +31,13 @@ test {
 
 jacocoTestReport{
     dependsOn(test)
-    enabled =false
+
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: [
+                    "ru/clevertec/core/*Exception.class"
+
+            ])
+        }))
+    }
 }
