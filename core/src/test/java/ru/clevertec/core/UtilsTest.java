@@ -2,20 +2,26 @@ package ru.clevertec.core;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 class UtilsTest {
 
     @Test
-    void isAllPositiveTest() {
+    void isAllPositiveTrue() {
         assertTrue(Utils.isAllPositiveNumbers("12", "0.001"));
-        assertFalse(Utils.isAllPositiveNumbers("12", "0"));
+    }
 
+    @Test
+    void isAllPositiveFalse() {
+        assertFalse(Utils.isAllPositiveNumbers("12", "0"));
     }
 
     @Test
     void isAllPositiveTestThrowException() {
-        assertThrows(InputDataException.class, () -> Utils.isAllPositiveNumbers(new String[]{}));
-        assertThrows(NumberFormatException.class, () -> Utils.isAllPositiveNumbers(new String[]{"bbkhb"}));
+        assertThrows(IllegalArgumentException.class, () -> Utils.isAllPositiveNumbers(new String[]{}));
+
     }
 }

@@ -1,6 +1,5 @@
 package ru.clevertec.api;
 
-import ru.clevertec.core.InputDataException;
 import ru.clevertec.core.Utils;
 
 public class App {
@@ -12,7 +11,7 @@ public class App {
             }else {
                 System.out.println("Some numbers are not positive.");
             }
-        }catch (NumberFormatException | InputDataException e) {
+        }catch (IllegalArgumentException e) {
             System.out.println("Something went wrong! " + e.getMessage());
             e.printStackTrace();
         }
