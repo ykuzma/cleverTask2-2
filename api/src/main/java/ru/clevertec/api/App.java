@@ -5,15 +5,19 @@ import ru.clevertec.core.Utils;
 public class App {
     public static void main(String[] args) {
 
+        System.out.println(checkIsNumberPositive("12", "79"));
+    }
+
+    public static String checkIsNumberPositive(String... str) {
+
         try {
-            if(Utils.isAllPositiveNumbers("12", "79")) {
-                System.out.println("All numbers are positive.");
+            if(Utils.isAllPositiveNumbers(str)) {
+               return "All numbers are positive.";
             }else {
-                System.out.println("Some numbers are not positive.");
+                return "Some numbers are not positive.";
             }
         }catch (IllegalArgumentException e) {
-            System.out.println("Something went wrong! " + e.getMessage());
-            e.printStackTrace();
+            return "Something went wrong! " + e.getMessage();
         }
     }
 }
